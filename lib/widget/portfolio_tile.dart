@@ -15,13 +15,13 @@ class Portfoliotile extends StatelessWidget {
       color: Colors.grey.shade300,
       child: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: ProjectsListTile(),
+        child: projectsListTile(),
         // child: Container(child: Text("This is it")),
       ),
     );
   }
 
-  ListTile ProjectsListTile() {
+  ListTile projectsListTile() {
     return ListTile(
       tileColor: Constants().listColor[Random().nextInt(3)],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -79,7 +79,10 @@ class Portfoliotile extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
             backgroundColor: Colors.white,
-            label: Text(element.name),
+            label: Text(
+              element.name.characters.toUpperCase().first +
+                  element.name.substring(1),
+            ),
           ),
         ),
       );

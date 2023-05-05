@@ -14,6 +14,15 @@ class IntroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
+    CrossAxisAlignment isMobile() {
+      if (width <= 425) {
+        return CrossAxisAlignment.start;
+      } else {
+        return CrossAxisAlignment.center;
+        // return false;
+      }
+    }
+
     return RoundedContainer(
       child: Column(
         // mainAxisSize: MainAxisSize.max,
@@ -22,14 +31,19 @@ class IntroSection extends StatelessWidget {
           // rowColumnSwitch(width),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
-              MyImage(),
-              Text(
-                "Hello, I'm Purveshxd a",
-                // textAlign: TextAlign.left,
-                style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            children: [
+              const MyImage(),
+              Column(
+                crossAxisAlignment: isMobile(),
+                children: const [
+                  Text(
+                    "Hello, I'm Purveshxd a",
+                    // textAlign: TextAlign.left,
+                    style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+                  ),
+                  AnimatedTextW(),
+                ],
               ),
-              AnimatedTextW(),
             ],
           ),
           const SizedBox(

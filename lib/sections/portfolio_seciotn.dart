@@ -21,19 +21,6 @@ class PortfolioSection extends StatelessWidget {
           // style: TextStyle(fontWeight: FontWeight.w500, fontSize: 25),
           style: Constants().headingStyle(),
         ),
-
-        // List of my projects
-        // SizedBox(
-        //   height: MediaQuery.of(context).size.height,
-        //   child: ListView.builder(
-        //     itemCount: projects.length,
-        //     itemBuilder: (context, index) => Portfoliotile(
-        //       index: index,
-        //     ),
-        //   ),
-        // ),
-
-        // for now
         switchGridColumn(width)
             ? buildGridSection()
             : Column(
@@ -42,22 +29,9 @@ class PortfolioSection extends StatelessWidget {
                 children: buildPortfolioTile(width),
                 // children: [buildGridSection()],
               ),
-        // switchGridColumn(width) ? buildGridSection() : buildPortfolioTile(width)
       ],
     ));
   }
-
-  // GridView buildGridSection() {
-  //   List<Widget> widgetList = [];
-  //   for (var i = 0; i < projects.length; i++) {
-  //     widgetList.add(Portfoliotile(index: i));
-  //   }
-  //   return GridView.count(
-  //     shrinkWrap: true,
-  //     crossAxisCount: 2,
-  //     children: widgetList,
-  //   );
-  // }
 
   List<Widget> buildPortfolioTile(width) {
     List<Widget> widgetList = [];

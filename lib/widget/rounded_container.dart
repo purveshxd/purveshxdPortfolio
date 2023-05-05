@@ -7,7 +7,7 @@ class RoundedContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      margin: const EdgeInsets.only(top: 15, right: 15, left: 15, bottom: 7.5),
+      margin: const EdgeInsets.only(top: 15, right: 15, left: 15, bottom: 15),
       width: double.infinity,
       decoration: BoxDecoration(
         boxShadow: [

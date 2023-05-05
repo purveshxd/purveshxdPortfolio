@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: const MaterialScrollBehavior().copyWith(scrollbars: false),
       title: 'purveshxd',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
