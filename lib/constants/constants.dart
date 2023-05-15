@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Constants {
   final String resumeUrl =
-      "https://drive.google.com/file/d/1VfYUCqsTC-Of3fGrOnxyoOuQ_-TOqDo9/view";
+      "https://drive.google.com/file/d/1VfYUCqsTC-Of3fGrOnxyoOuQ_-TOqDo9/view?usp=sharing";
   TextStyle headingStyle() {
     return const TextStyle(
       fontWeight: FontWeight.bold,

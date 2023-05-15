@@ -13,6 +13,18 @@ final List projects = [
     ]
   ],
   [
+     "the_boring_app",
+    "App when you are bored and want to find something new to do, this works by calling the boredApi and displays the activities on the screen and user can save activities and complete them.",
+    "https://github.com/purveshxd/theboringapp",
+    [
+      Tags.flutter,
+      Tags.firebaseAuth,
+      Tags.firebaseFirestore,
+      Tags.crud,
+      Tags.dart,
+    ]
+  ],
+  [
     "quickrChat",
     "Currently under development quickrChat is a chat app made in flutter with firebase as a Authentication provider and also for database using firebase firestore for real-time messaging, this uses QR code to quickly chat with anyone around",
     "https://github.com/purveshxd/quickrChat",
